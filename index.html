@@ -1,19 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./public/Images/Telegram.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./public/Images/Telegram.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
   <title>Telegram UI</title>
 </head>
-<body class="max-w-lg mx-auto py-10">
-  <header class="bg-blue-400">
-    <div>
+
+<body class="max-w-md mx-auto py-10">
+  <h2 class="text-center font-bold">Telegram UI</h2>
+  <br />
+  <header class="bg-blue-400 px-6 py-4">
+    <div class="flex">
+      <div class="flex items-center flex-1 space-x-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="cursor-pointer">
+          <path fill="none" stroke="white" stroke-linecap="round" stroke-width="2" d="M5 6h14M5 12h14M5 18h14" />
+        </svg>
+
+        <span class="cursor-pointer text-white text-lg">Telegram</span>
+      </div>
+
       <div>
-        <h1>Telegram</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="cursor-pointer">
+          <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m15 15l6 6m-11-4a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
+        </svg>
       </div>
     </div>
   </header>
+
+  <!-- chats -->
+  <section class="cursor-pointer">
+    <div class="bg-blue-100">
+      <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+        <div>
+          <img src="https://ui-avatars.com/api/?name=John+Doe&background=random" alt="John" class="rounded-full" />
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold">Bob</h4>
+          <p>Are you even lifting, bro?</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>12: 43</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            class="border-gray-400 mt-1">
+            <path fill="gray"
+              d="m22.313 10.175l-1.415 1.414l-.707-.707l-4.242 4.243l-.707 3.535l-1.415 1.415l-4.242-4.243l-4.95 4.95l-1.414-1.414l4.95-4.95l-4.243-4.243l1.414-1.414l3.536-.707L13.12 3.81l-.707-.707l1.414-1.414l8.486 8.485Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <hr class="border-zinc-300" />
+    <div class="bg-blue-100">
+      <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+        <div>
+          <img src="https://ui-avatars.com/api/?name=Alex+k&background=random" alt="Alex" class="rounded-full" />
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold">Alex</h4>
+          <p>Okay</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>12: 43</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-zinc-300" />
+    <div class="bg-blue-100">
+      <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+        <div>
+          <img src="https://ui-avatars.com/api/?name=Ivan+s&background=random" alt="Ivan" class="rounded-full" />
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold">Ivan</h4>
+          <p>See you there</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>12: 43</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            class="border-gray-400 mt-1">
+            <path fill="gray"
+              d="m22.313 10.175l-1.415 1.414l-.707-.707l-4.242 4.243l-.707 3.535l-1.415 1.415l-4.242-4.243l-4.95 4.95l-1.414-1.414l4.95-4.95l-4.243-4.243l1.414-1.414l3.536-.707L13.12 3.81l-.707-.707l1.414-1.414l8.486 8.485Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <hr class="border-zinc-300" />
+    <div class="bg-blue-100">
+      <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+        <div>
+          <img src="https://ui-avatars.com/api/?name=Pavel+Durov&background=random" alt="Pavel Durov"
+            class="rounded-full" />
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold">Pavel Durov</h4>
+          <p>Are you even lifting, bro?</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>12: 43</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            class="border-gray-400 mt-1">
+            <path fill="gray"
+              d="m22.313 10.175l-1.415 1.414l-.707-.707l-4.242 4.243l-.707 3.535l-1.415 1.415l-4.242-4.243l-4.95 4.95l-1.414-1.414l4.95-4.95l-4.243-4.243l1.414-1.414l3.536-.707L13.12 3.81l-.707-.707l1.414-1.414l8.486 8.485Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <hr class="border-zinc-300" />
+    <div class="bg-blue-100">
+      <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+        <div>
+          <img src="https://ui-avatars.com/api/?name=Lisa+S&background=random" alt="Lisa" class="rounded-full" />
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold">PLisa</h4>
+          <p>Sup</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>12: 43</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-zinc-300" />
+    <div class="bg-blue-100">
+      <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+        <div>
+          <img src="https://ui-avatars.com/api/?name=Mr+Heisenber&background=random" alt="Heisenber"
+            class="rounded-full" />
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold">Mr. Heisenber</h4>
+          <p>Don't skip my classes anymore</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                clip-rule="evenodd" />
+            </svg>
+            <div class="flex-col">
+              <span>12: 43</span>
+              <span class="w-6 h-6 p-2 bg-emerald-400 font-semibold rounded-full flex text-xs items-center">15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-zinc-300" />
+      <div class="bg-blue-100">
+        <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+          <div>
+            <img src="https://ui-avatars.com/api/?name=Jack+Uni&background=random" alt="Jack" class="rounded-full" />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-semibold">Jack</h4>
+            <p>I need to think about this more</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <div class="flex-col">
+                <span>12: 43</span>
+                <span class="w-6 h-6 p-2 bg-emerald-400 font-semibold rounded-full flex text-xs items-center">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-zinc-300" />
+      <div class="bg-blue-100">
+        <div class="flex items-center space-x-4 px-3 py-2 hover:bg-stone-200">
+          <div>
+            <img src="https://ui-avatars.com/api/?name=Smith+s&background=random" alt="Smith" class="rounded-full" />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-semibold">Smith</h4>
+            <p>How are you?</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 15">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="m11.39 5.312l-4.318 5.399L3.68 7.884l.64-.768l2.608 2.173l3.682-4.601l.78.624Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>12: 43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-zinc-300" />
+  </section>
 </body>
+
 </html>
